@@ -14,4 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/test','Test\TestController@getwxtoken');
+Route::get('/test/getwxtoken','Test\TestController@getwxtoken');
+Route::get('/test/getwxtoken2','Test\TestController@getwxtoken2');
+Route::get('/test/getwxtoken3','Test\TestController@getwxtoken3');
