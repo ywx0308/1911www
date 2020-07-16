@@ -54,4 +54,11 @@ class TestController extends Controller
         $res = $client->request('GET', $url)->getBody()->getContents();
         echo $res;
     }
+
+
+    public function apiinit(){
+        $url="http://www.api.com/test/getwxtoken";
+        $request=file_get_contents($url);
+        echo $request;
+    }
 }
